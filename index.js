@@ -1,6 +1,7 @@
 import "dotenv/config";
 import { Telegraf } from "telegraf";
 import { message } from "telegraf/filters";
+const keep_alive = require('./keep_alive.js')
 
 const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 
